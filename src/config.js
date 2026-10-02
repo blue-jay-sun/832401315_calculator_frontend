@@ -1,1 +1,1 @@
-window.CALCULATOR_API = 'http://localhost:8000';
+window.CALCULATOR_API = 'https://qingsuan-sun-832401315.bold-clove-0728.chatgpt.site';
