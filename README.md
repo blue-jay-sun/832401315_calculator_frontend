@@ -13,3 +13,8 @@
 ## 部署
 
 将此目录部署为静态站点（例如 GitHub Pages 或 Nginx），修改 config.js 为已部署的 HTTPS API 地址，同时更新后端允许的来源。HTTPS 页面必须调用 HTTPS API，避免混合内容被拦截。前后端分别提交到两个 GitHub 仓库；当前目录是前端仓库根目录。
+
+
+## 已发布地址
+
+[在线计算器](https://qingsuan-sun-832401315.bold-clove-0728.chatgpt.site)。云端使用 Sites 与 D1 SQLite；兼容平台的完整部署源码、依赖锁文件、路由与数据库迁移见后端仓库 deployment/source.zip，可下载解压检查和复现。deployment/calculator.mjs 为线上计算器解析器，原 src/calculator.py 为 Python 本地版。云端有理数运算最后舍入为 28 位有效数字，Python 版则使用 Decimal 每步舍入。
