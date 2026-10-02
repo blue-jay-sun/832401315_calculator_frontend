@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>清算 · Calculator</title><link rel="stylesheet" href="src/style.css"></head>
+<body>
+<header><span class="logo">清算<span> / CALCULATOR</span></span><button id="theme">切换主题</button></header>
+<main><section class="calculator"><p class="eyebrow">让每一步，都清晰有据</p><h1>简单输入，认真计算。</h1><p class="intro">支持四则运算、括号、小数与正负数。</p>
+<form id="form"><label for="expression">计算表达式</label><input id="expression" autocomplete="off" maxlength="500" placeholder="例如 (12 + 8) × 3" required><div class="result" aria-live="polite"><small>计算结果</small><output id="result">—</output></div><p id="message" role="status"></p><div id="keys" class="keys"></div><button class="submit" type="submit">计算结果 <span>↵</span></button></form><p class="hint">Enter 计算 · Escape 清空 · 支持键盘输入</p></section>
+<aside><div class="history-heading"><h2>计算记录</h2><button id="refresh">刷新</button></div><p class="intro">记录保存在后端数据库，刷新后依然可查。</p><label for="search">搜索表达式</label><input id="search" placeholder="输入关键词后按 Enter"><div id="history" aria-live="polite"></div><nav><button id="prev">上一页</button><span id="page"></span><button id="next">下一页</button></nav></aside></main>
+<footer>清算 · 前后端分离计算器</footer><script src="src/config.js"></script><script src="src/app.js"></script></body></html>
